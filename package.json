@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd example && ../node_modules/.bin/beefy world.js 8180 -- -d"
+    "start": "cd example && ../node_modules/.bin/beefy world.js 8180 -- -d",
+    "gh-pages": "cp -R ./example/* ./ && browserify world.js -o world.js"
   },
   "author": "Matthias Vandermaesen",
   "license": "BSD",
