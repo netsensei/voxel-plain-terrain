@@ -1,0 +1,16 @@
+{
+  "name": "voxel-plain-terrain",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd example && ../node_modules/.bin/beefy world.js 8180 -- -d"
+  },
+  "author": "Matthias Vandermaesen",
+  "license": "BSD",
+  "devDependencies": {
+    "voxel-engine": "~0.20.0",
+    "voxel-player": "~0.1.0",
+    "beefy": "~1.0.0"
+  }
+}
