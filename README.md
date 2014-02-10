@@ -7,7 +7,7 @@ Voxel Plain terrain generator for [voxel.js](http://voxeljs.com).
 [View this example](http://netsensei.github.io/voxel-plain-terrain)
 
 ```js
-var terrain = require(voxel-plain-terrain');
+var terrain = require('voxel-plain-terrain');
 
 // Generate terrain
 var generateChunk = terrain();
