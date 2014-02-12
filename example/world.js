@@ -1,5 +1,4 @@
 var createGame = require('voxel-engine');
-var terrain = require('../');
 
 var game = createGame({
   generateChunks: false,
@@ -17,10 +16,9 @@ shama.yaw.position.set(0, 3, 0);
 shama.possess();
 
 // Generate terrain
-var generateChunk = terrain();
-
+var terrain = require('../')();
 game.voxels.on('missingChunk', function(p) {
-  var voxels = generateChunk(p, 32, 2);
+  var voxels = terrain.generateChunk(p, 32, 2);
   var chunk = {
     position: p,
     dims: [32, 32, 32],
